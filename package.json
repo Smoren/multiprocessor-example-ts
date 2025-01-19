@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "main": "tsx --no-warnings src/index.ts"
+  },
+  "dependencies": {
+    "multiprocessor": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.33",
+    "typescript": "~5.4.5",
+    "tsx": "^4.10.1"
+  }
+}
