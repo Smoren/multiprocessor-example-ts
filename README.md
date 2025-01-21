@@ -2,7 +2,7 @@
 
 ## What is multiprocessor?
 
-[Multiprocessor](https://github.com/Smoren/multiprocessor-ts) is a Javascript/Typescript library that allows you to run 
+[Multiprocessor](https://github.com/Smoren/multiprocessor-ts) is a NodeJS/Typescript library that allows you to run 
 tasks in parallel using child processes.
 
 ## How it works
