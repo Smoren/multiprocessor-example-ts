@@ -14,7 +14,14 @@ async function main() {
     console.error(`Task #${index} error: ${error}`);
   };
 
-  const result = await pool.map(input, calcSinTask, onSuccess, onError);
+  const result = await pool.map(input, calcSinTask, {
+    onTaskSuccess: (result: number, input: number, index: number) => {
+      console.log(`Task #${index} | result: ${result}, input: ${input}`);
+    },
+    onTaskError: (error: string, input: number, index: number) => {
+      console.log(`Task #${index} | error: ${error}, input: ${input}`);
+    }
+  });
   pool.close();
 
   console.log('Map result:', result);

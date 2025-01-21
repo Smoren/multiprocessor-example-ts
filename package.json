@@ -3,7 +3,7 @@
     "main": "tsx --no-warnings src/index.ts"
   },
   "dependencies": {
-    "multiprocessor": "^1.0.1"
+    "multiprocessor": "^2.0.2"
   },
   "devDependencies": {
     "@types/node": "^18.19.33",
